@@ -15,13 +15,13 @@ import {
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
 import {useDevice} from "../../contexts/DeviceContext.tsx";
+import app_routes from "../../routes/app_routes.ts";
 
 const menuItems = [
-    { label: 'Home', href: '#home' },
+    { label: 'Home', href: app_routes.home },
     { label: 'Sobre Nós', href: '#sobre' },
-    { label: 'Profissionais', href: '#profissionais' },
-    { label: 'Contato', href: '#contato' },
-    { label: 'Serviços & FAQ', href: '#servicos' }
+    { label: 'Profissionais', href: app_routes.professionalsPage },
+    { label: 'Contato', href: app_routes.contact },
 ];
 
 const Header: React.FC = () => {

@@ -1,8 +1,11 @@
+import Hero from "./sections/Hero.tsx";
+import ServicesSection from "./sections/ServicesSection.tsx";
 
 export default function Home() {
     return (
         <>
-           <p>Helooooooooooooo World</p>
+            <Hero/>
+            <ServicesSection />
         </>
     );
 }
