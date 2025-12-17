@@ -1,6 +1,8 @@
 import React from 'react';
 import { Box, Container, Typography, Button } from '@mui/material';
+import { Link } from "react-router-dom";
 import { useDevice } from "../../../contexts/DeviceContext.tsx";
+import app_routes from "../../../routes/app_routes.ts";
 
 const Hero: React.FC = () => {
     const { isMobile } = useDevice();
@@ -9,9 +11,9 @@ const Hero: React.FC = () => {
         <Box
             component="section"
             sx={{
-                backgroundColor: 'background.default',
+                backgroundColor: "transparent",
                 py: { xs: 6, sm: 8, md: 10, lg: 12 },
-                px: 2
+                px: 2,
             }}
         >
             <Container maxWidth="lg">
@@ -58,33 +60,35 @@ const Hero: React.FC = () => {
                                 maxWidth: { xs: '100%', md: '90%' }
                             }}
                         >
-                            Bem-vindo ao SOS Centro Veterinário. Dedicação, carinho e a
+                            Bem-vindo ao Centro Veterinário S.O.S. Dedicação, carinho e a
                             melhor equipe para a saúde e bem-estar do seu pet.
                         </Typography>
 
-                        <Button
-                            variant="contained"
-                            size={isMobile ? 'medium' : 'large'}
-                            sx={{
-                                backgroundColor: 'primary.main',
-                                color: 'white',
-                                textTransform: 'none',
-                                fontSize: { xs: '0.95rem', md: '1rem' },
-                                fontWeight: 600,
-                                px: { xs: 3, md: 4 },
-                                py: { xs: 1.25, md: 1.5 },
-                                borderRadius: '50px',
-                                boxShadow: '0 4px 14px rgba(244, 37, 37, 0.25)',
-                                transition: 'all 0.3s ease',
-                                '&:hover': {
-                                    backgroundColor: 'primary.dark',
-                                    boxShadow: '0 6px 20px rgba(244, 37, 37, 0.35)',
-                                    transform: 'translateY(-2px)'
-                                }
-                            }}
-                        >
-                            Agende uma Consulta
-                        </Button>
+                        <Link to={app_routes.contact} style={{ textDecoration: "none" }}>
+                            <Button
+                                variant="contained"
+                                size={isMobile ? 'medium' : 'large'}
+                                sx={{
+                                    backgroundColor: 'primary.main',
+                                    color: 'white',
+                                    textTransform: 'none',
+                                    fontSize: { xs: '0.95rem', md: '1rem' },
+                                    fontWeight: 600,
+                                    px: { xs: 3, md: 4 },
+                                    py: { xs: 1.25, md: 1.5 },
+                                    borderRadius: '50px',
+                                    boxShadow: '0 4px 14px rgba(244, 37, 37, 0.25)',
+                                    transition: 'all 0.3s ease',
+                                    '&:hover': {
+                                        backgroundColor: 'primary.dark',
+                                        boxShadow: '0 6px 20px rgba(244, 37, 37, 0.35)',
+                                        transform: 'translateY(-2px)'
+                                    }
+                                }}
+                            >
+                                Fale Conosco
+                            </Button>
+                        </Link>
                     </Box>
 
                     {/* Coluna da Imagem */}
@@ -92,7 +96,7 @@ const Hero: React.FC = () => {
                         <Box
                             component="img"
                             src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&h=600&fit=crop&q=80"
-                            alt="Cachorros Golden Retriever felizes em campo de flores"
+                            alt="Cachorros felizes em campo de flores"
                             sx={{
                                 width: '100%',
                                 maxWidth: { xs: '100%', sm: '500px', md: '100%' },

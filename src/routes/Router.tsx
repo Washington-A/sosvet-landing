@@ -5,6 +5,7 @@ import Home from "../pages/home/Home.tsx";
 import MainLayout from "../components/appLayout/MainLayout.tsx";
 import ProfessionalsPage from "../pages/professionals/ProfessionalsPage.tsx";
 import ContactPage from "../pages/contact/ContactPage.tsx";
+import AboutPage from "../pages/about/AboutPage.tsx";
 
 export default function Router() {
     return (
@@ -13,6 +14,7 @@ export default function Router() {
                 <Route path={app_routes.home} element={<Home/>}/>
                 <Route path={app_routes.professionalsPage} element={<ProfessionalsPage/>}/>
                 <Route path={app_routes.contact} element={<ContactPage/>}/>
+                <Route path={app_routes.about} element={<AboutPage/>}/>
             </Route>
         </Routes>
 

@@ -1,20 +1,17 @@
 import React from 'react';
-import { Card, CardContent, CardActions, Typography, Link, Box } from '@mui/material';
+import { Card, CardContent, Typography, Box } from '@mui/material';
 
 interface ServiceCardProps {
     icon: React.ReactNode;
     title: string;
     description: string;
-    linkText?: string;
-    onLinkClick?: () => void;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({
                                                      icon,
                                                      title,
                                                      description,
-                                                     linkText = 'Saiba Mais',
-                                                     onLinkClick
+
                                                  }) => {
     return (
         <Card
@@ -89,35 +86,6 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
                     {description}
                 </Typography>
             </CardContent>
-
-            {/* Link */}
-            <CardActions
-                sx={{
-                    justifyContent: 'center',
-                    pb: { xs: 3, md: 4 }
-                }}
-            >
-                <Link
-                    component="button"
-                    onClick={onLinkClick}
-                    underline="none"
-                    sx={{
-                        color: 'primary.main',
-                        fontWeight: 600,
-                        fontSize: '0.95rem',
-                        cursor: 'pointer',
-                        border: 'none',
-                        background: 'none',
-                        transition: 'all 0.2s ease',
-                        '&:hover': {
-                            textDecoration: 'underline',
-                            color: 'primary.dark'
-                        }
-                    }}
-                >
-                    {linkText}
-                </Link>
-            </CardActions>
         </Card>
     );
 };

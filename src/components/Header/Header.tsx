@@ -19,7 +19,7 @@ import app_routes from "../../routes/app_routes.ts";
 
 const menuItems = [
     { label: 'Home', href: app_routes.home },
-    { label: 'Sobre Nós', href: '#sobre' },
+    { label: 'Sobre Nós', href: app_routes.about },
     { label: 'Profissionais', href: app_routes.professionalsPage },
     { label: 'Contato', href: app_routes.contact },
 ];
@@ -63,7 +63,7 @@ const Header: React.FC = () => {
                                 }
                             }}
                         >
-                            SOS Centro Veterinário
+                            Centro Veterinário S.O.S
                         </Box>
 
                         {isMobile ? (
