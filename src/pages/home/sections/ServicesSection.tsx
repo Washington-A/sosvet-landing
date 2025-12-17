@@ -33,7 +33,7 @@ const ServicesSection: React.FC = () => {
         {
             icon: <ScienceIcon fontSize="inherit" />,
             title: 'Exames Laboratoriais',
-            description: 'Hemogramas para cães, gatos e bovinos, mais de 30 exames bioquímicos e 15 testes rápidos, garantindo diagnósticos precisos.'
+            description: 'Hemogramas completos para cães e gatos com tecnologia IDEXX, além de mais de 30 exames bioquímicos e 15 testes rápidos, oferecendo diagnósticos ágeis, seguros e confiáveis.'
         },
         {
             icon: <MedicalInformationIcon fontSize="inherit" />,
@@ -48,7 +48,7 @@ const ServicesSection: React.FC = () => {
         {
             icon: <PetsIcon fontSize="inherit" />,
             title: 'Estética Animal',
-            description: 'Banhos, tosas e cuidados de higiene para o bem-estar e beleza do seu pet.'
+            description: 'Banhos, tosas e cuidados de higiene com a linha Hydra da Pet Society, promovendo bem-estar, beleza e saúde para o seu pet.'
         }
     ];
 
