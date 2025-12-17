@@ -8,6 +8,7 @@ import PetsIcon from '@mui/icons-material/Pets';
 import MedicalInformationIcon from '@mui/icons-material/MedicalInformation';
 import MonitorHeartIcon from '@mui/icons-material/MonitorHeart';
 import ServiceCard from "../../../components/card/ServiceCard.tsx";
+import LogoHeader from "../../../components/logoHeader/LogoHeader.tsx";
 
 const ServicesSection: React.FC = () => {
 
@@ -51,21 +52,17 @@ const ServicesSection: React.FC = () => {
         }
     ];
 
-    const handleServiceClick = (title: string) => {
-        console.log(`Clicou em: ${title}`);
-    };
-
     return (
         <Box
             component="section"
             id="servicos"
             sx={{
-                py: { xs: 8, md: 10, lg: 12 },
-                px: 2,
+                    px: 2,
                 backgroundColor: "transparent"
             }}
         >
             <Container maxWidth="lg">
+                <LogoHeader size="medium" />
                 {/* Título da Seção */}
                 <Typography
                     variant="h2"
@@ -107,7 +104,6 @@ const ServicesSection: React.FC = () => {
                                 icon={service.icon}
                                 title={service.title}
                                 description={service.description}
-                                onLinkClick={() => handleServiceClick(service.title)}
                             />
                         </Grid>
                     ))}

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box, Container, Typography, Grid } from '@mui/material';
 import ProfessionalCard from "../../components/card/ProfessionalCard.tsx";
+import LogoHeader from "../../components/logoHeader/LogoHeader.tsx";
 
 const ProfessionalsPage: React.FC = () => {
     const professionals = [
@@ -67,10 +68,12 @@ const ProfessionalsPage: React.FC = () => {
                     py: { xs: 6, md: 8, lg: 10 },
                     px: 2,
                     textAlign: 'center',
-                    backgroundColor: 'white'
+                    backgroundColor: "transparent"
                 }}
             >
                 <Container maxWidth="lg">
+                    <LogoHeader size="medium" />
+
                     <Typography
                         variant="h1"
                         component="h1"
@@ -95,7 +98,7 @@ const ProfessionalsPage: React.FC = () => {
                             lineHeight: 1.7
                         }}
                     >
-                        No SOS Centro Veterinário, seu pet está em boas mãos. Nossa equipe de
+                        No Centro Veterinário S.O.S, seu pet está em boas mãos. Nossa equipe de
                         veterinários e especialistas é dedicada a oferecer o melhor cuidado e carinho,
                         combinando experiência e paixão pela saúde animal.
                     </Typography>

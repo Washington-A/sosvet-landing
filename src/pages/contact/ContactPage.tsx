@@ -5,6 +5,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import {useDevice} from "../../contexts/DeviceContext.tsx";
+import LogoHeader from "../../components/logoHeader/LogoHeader.tsx";
 
 interface UnitData {
     city: string;
@@ -69,10 +70,12 @@ const ContactPage: React.FC = () => {
                     py: { xs: 6, md: 8, lg: 10 },
                     px: 2,
                     textAlign: 'center',
-                    backgroundColor: 'white'
+                    backgroundColor: "transparent"
                 }}
             >
                 <Container maxWidth="lg">
+                    <LogoHeader size="medium" />
+
                     <Typography
                         variant="h1"
                         component="h1"
@@ -97,7 +100,7 @@ const ContactPage: React.FC = () => {
                             lineHeight: 1.7
                         }}
                     >
-                        O SOS Centro Veterinário está presente em três cidades, sempre perto de você
+                        O Centro Veterinário S.O.S está presente em três cidades, sempre perto de você
                         para oferecer o melhor atendimento e cuidado para seu pet.
                     </Typography>
                 </Container>
