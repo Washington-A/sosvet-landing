@@ -14,42 +14,36 @@ import {
 } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
-import {useDevice} from "../../contexts/DeviceContext.tsx";
+import { Link as RouterLink } from "react-router-dom"; // ✅
+import { useDevice } from "../../contexts/DeviceContext.tsx";
 import app_routes from "../../routes/app_routes.ts";
 
 const menuItems = [
-    { label: 'Home', href: app_routes.home },
-    { label: 'Sobre Nós', href: app_routes.about },
-    { label: 'Profissionais', href: app_routes.professionalsPage },
-    { label: 'Contato', href: app_routes.contact },
+    { label: 'Home', to: app_routes.home },
+    { label: 'Sobre Nós', to: app_routes.about },
+    { label: 'Profissionais', to: app_routes.professionalsPage },
+    { label: 'Contato', to: app_routes.contact },
 ];
 
 const Header: React.FC = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
-
     const { isMobile } = useDevice();
 
-    const handleDrawerToggle = () => {
-        setDrawerOpen(!drawerOpen);
-    };
+    const handleDrawerToggle = () => setDrawerOpen(!drawerOpen);
 
     return (
         <>
             <AppBar
                 position="sticky"
                 elevation={1}
-                sx={{
-                    backgroundColor: 'white',
-                    borderBottom: '1px solid',
-                    borderColor: 'divider'
-                }}
+                sx={{ backgroundColor: 'white', borderBottom: '1px solid', borderColor: 'divider' }}
             >
                 <Container maxWidth={false}>
                     <Toolbar disableGutters sx={{ justifyContent: 'space-between', py: 1 }}>
-                        {/* Logo */}
+
                         <Box
-                            component="a"
-                            href="#home"
+                            component={RouterLink}
+                            to={app_routes.home}
                             sx={{
                                 display: 'flex',
                                 alignItems: 'center',
@@ -58,9 +52,7 @@ const Header: React.FC = () => {
                                 fontWeight: 700,
                                 fontSize: { xs: '1.25rem', sm: '1.5rem' },
                                 transition: 'color 0.3s',
-                                '&:hover': {
-                                    color: 'primary.dark'
-                                }
+                                '&:hover': { color: 'primary.dark' }
                             }}
                         >
                             Centro Veterinário S.O.S
@@ -74,9 +66,7 @@ const Header: React.FC = () => {
                                 onClick={handleDrawerToggle}
                                 sx={{
                                     color: 'primary.main',
-                                    '&:hover': {
-                                        backgroundColor: 'rgba(244, 37, 37, 0.08)'
-                                    }
+                                    '&:hover': { backgroundColor: 'rgba(244, 37, 37, 0.08)' }
                                 }}
                             >
                                 <MenuIcon />
@@ -86,8 +76,8 @@ const Header: React.FC = () => {
                                 {menuItems.map((item) => (
                                     <Button
                                         key={item.label}
-                                        component="a"
-                                        href={item.href}
+                                        component={RouterLink}
+                                        to={item.to}
                                         sx={{
                                             color: 'text.primary',
                                             textTransform: 'none',
@@ -115,12 +105,9 @@ const Header: React.FC = () => {
                 anchor="right"
                 open={drawerOpen}
                 onClose={handleDrawerToggle}
-                ModalProps={{
-                    keepMounted: true
-                }}
+                ModalProps={{ keepMounted: true }}
             >
                 <Box sx={{ width: 250, height: '100%', bgcolor: 'background.paper' }}>
-                    {/* Header do Drawer */}
                     <Box
                         sx={{
                             display: 'flex',
@@ -131,34 +118,23 @@ const Header: React.FC = () => {
                             borderColor: 'divider'
                         }}
                     >
-                        <Box
-                            sx={{
-                                color: 'primary.main',
-                                fontWeight: 700,
-                                fontSize: '1.1rem'
-                            }}
-                        >
+                        <Box sx={{ color: 'primary.main', fontWeight: 700, fontSize: '1.1rem' }}>
                             Menu
                         </Box>
                         <IconButton
                             onClick={handleDrawerToggle}
-                            sx={{
-                                '&:hover': {
-                                    backgroundColor: 'rgba(244, 37, 37, 0.08)'
-                                }
-                            }}
+                            sx={{ '&:hover': { backgroundColor: 'rgba(244, 37, 37, 0.08)' } }}
                         >
                             <CloseIcon />
                         </IconButton>
                     </Box>
 
-                    {/* Lista de Menu Items */}
                     <List sx={{ pt: 1 }}>
                         {menuItems.map((item) => (
                             <ListItem key={item.label} disablePadding>
                                 <ListItemButton
-                                    component="a"
-                                    href={item.href}
+                                    component={RouterLink}
+                                    to={item.to}
                                     onClick={handleDrawerToggle}
                                     sx={{
                                         py: 2,
@@ -166,9 +142,7 @@ const Header: React.FC = () => {
                                         transition: 'all 0.3s',
                                         '&:hover': {
                                             backgroundColor: 'rgba(244, 37, 37, 0.05)',
-                                            '& .MuiListItemText-primary': {
-                                                color: 'primary.main'
-                                            }
+                                            '& .MuiListItemText-primary': { color: 'primary.main' }
                                         }
                                     }}
                                 >
