@@ -1,16 +1,16 @@
 import Router from "./routes/Router.tsx";
-import {BrowserRouter} from "react-router-dom";
+import { HashRouter} from "react-router-dom";
 import {DeviceProvider} from "./contexts/DeviceContext.tsx";
 
 function App() {
 
     return (
         <>
-            <BrowserRouter basename={"/sosvet-landing/"}>
+            <HashRouter>
                 <DeviceProvider>
                     <Router/>
                 </DeviceProvider>
-            </BrowserRouter>
+            </HashRouter>
         </>
     )
 }
