@@ -6,53 +6,32 @@ import LogoHeader from "../../components/logoHeader/LogoHeader.tsx";
 const ProfessionalsPage: React.FC = () => {
     const professionals = [
         {
-            image: 'https://images.unsplash.com/photo-1594824476967-48c8b964273f?w=400&h=400&fit=crop',
-            name: 'Dra. Ana Silva',
-            specialty: 'Clínica Geral e Cirurgia',
-            description: 'Com mais de 15 anos de experiência, Dra. Ana é especialista em clínica geral e procedimentos cirúrgicos complexos, dedicada ao bem-estar e recuperação de seus pacientes.'
+            image: '/images/dr-neto.jpeg',
+            name: 'Dr. Lázaro Antunes Cintra Neto',
+            specialty: 'Dermatólogo Veterinári',
+            description: 'Médica-veterinária especialista em Oftalmologia Veterinária, atua no diagnóstico e tratamento das doenças oculares em cães e gatos, oferecendo atendimento cuidadoso, preciso e focado na qualidade de vida dos pacientes.'
         },
         {
-            image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=400&h=400&fit=crop',
-            name: 'Dr. Carlos Mendes',
-            specialty: 'Dermatologia Veterinária',
-            description: 'Referência em dermatologia, Dr. Carlos trata as mais diversas afecções de pele em pets, utilizando as técnicas mais modernas para garantir conforto e saúde.'
+            image: '/images/dr-carlos.png',
+            name: 'Dr. Carlos Eduardo',
+            specialty: 'Médico Veterinário',
+            description: 'Médica-veterinária especialista em Oftalmologia Veterinária, atua no diagnóstico e tratamento das doenças oculares em cães e gatos, oferecendo atendimento cuidadoso, preciso e focado na qualidade de vida dos pacientes.'
         },
         {
-            image: 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?w=400&h=400&fit=crop',
-            name: 'Dra. Sofia Lima',
-            specialty: 'Anestesiologia e Terapia da Dor',
-            description: 'Responsável por garantir cirurgias seguras e um pós-operatório confortável, a Dra. Sofia tem expertise em controle da dor e anestesia avançada.'
+            image: '/images/dr-django.jpeg',
+            name: 'Dr. Django Fabiano Bessa Gomes Gadelha',
+            specialty: 'Médico Veterinário e Especialista',
+            description: 'Médico-veterinário formado pela Universidade Federal de Goiás (UFG – Jataí), com mais de 10 anos de experiência clínica e 5 anos de atuação em especialidades.' +
+                'É especialista em Ortopedia, Neurologia e Neurocirurgia de pequenos animais, com formação pela Anclivepa-SP e pela Unesp – Jaboticabal. Possui ainda capacitação em cirurgias urológicas avançadas e cirurgia abdominal avançada, atuando com excelência em casos de alta complexidade.' +
+                'CRMV 7196'
         },
         {
-            image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop',
-            name: 'Dr. Ricardo Gomes',
-            specialty: 'Odontologia Veterinária',
-            description: 'Dr. Ricardo cuida da saúde bucal do seu pet, prevenindo e tratando doenças periodontais para garantir uma vida mais longa e saudável.'
+            image: '/images/dra-tatiana.jpeg',
+            name: 'Dra. Tatiana Guimarães Peres',
+            specialty: 'Oftalmologista Veterinária',
+            description: 'Médica-veterinária especialista em Oftalmologia Veterinária, atua no diagnóstico e tratamento das doenças oculares em cães e gatos, oferecendo atendimento cuidadoso, preciso e focado na qualidade de vida dos pacientes.'
         },
-        {
-            image: 'https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=400&h=400&fit=crop',
-            name: 'Dra. Mariana Costa',
-            specialty: 'Cardiologia Veterinária',
-            description: 'Especialista em doenças do coração de cães e gatos, a Dra. Mariana oferece diagnósticos precisos e tratamentos eficazes para garantir a qualidade de vida.'
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&h=400&fit=crop',
-            name: 'Dr. Pedro Álvares',
-            specialty: 'Ortopedia e Fisioterapia',
-            description: 'Com foco em recuperação de lesões e melhora da mobilidade, Dr. Pedro é dedicado a restaurar a qualidade de vida de pets com problemas ortopédicos.'
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop',
-            name: 'Dra. Laura Fernandes',
-            specialty: 'Oftalmologia Veterinária',
-            description: 'A Dra. Laura é a nossa especialista em saúde ocular, realizando exames detalhados e cirurgias para preservar a visão do seu companheiro.'
-        },
-        {
-            image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop',
-            name: 'Dr. Marcos Dias',
-            specialty: 'Medicina Felina',
-            description: 'Dedicado exclusivamente aos gatos, Dr. Marcos compreende as necessidades específicas dos felinos, oferecendo cuidados especializados.'
-        }
+
     ];
 
     return (
