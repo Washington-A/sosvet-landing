@@ -23,31 +23,13 @@ const ContactPage: React.FC = () => {
     const units: UnitData[] = [
         {
             city: 'Santa Helena de Goiás',
-            image: 'https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?w=800&h=600&fit=crop',
+            image: '/sosvet-landing/images/centrovet-sh.jpg',
             description: 'Nossa unidade matriz, equipada com tecnologia de ponta e equipe completa de especialistas. Atendimento 24 horas para emergências.',
-            address: 'Rua Principal, 123 - Centro, Santa Helena de Goiás - GO',
-            phone: '(64) 3634-1234',
-            whatsapp: '5564936341234',
-            instagram: 'https://instagram.com/sosvet_santahelena'
+            address: 'R. Paulo Lopes, n° 857 - Centro, Santa Helena de Goiás - GO, 75920-000',
+            phone: '(64) 3641-2561, Plantão: (64) 99289-1730',
+            whatsapp: '5564992805001',
+            instagram: 'https://www.instagram.com/centrovet.sos?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
         },
-        {
-            city: 'Maurilândia',
-            image: 'https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?w=800&h=600&fit=crop',
-            description: 'Unidade moderna com atendimento completo em clínica geral, cirurgias e exames. Profissionais dedicados ao bem-estar do seu pet.',
-            address: 'Av. Goiás, 456 - Centro, Maurilândia - GO',
-            phone: '(64) 3635-5678',
-            whatsapp: '5564936355678',
-            instagram: 'https://instagram.com/sosvet_maurilandia'
-        },
-        {
-            city: 'Turvelândia',
-            image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=800&h=600&fit=crop',
-            description: 'Nossa mais nova unidade, oferecendo serviços de qualidade e carinho personalizado para cada paciente. Estacionamento amplo.',
-            address: 'Rua das Flores, 789 - Centro, Turvelândia - GO',
-            phone: '(64) 3636-9012',
-            whatsapp: '5564936369012',
-            instagram: 'https://instagram.com/sosvet_turvelandia'
-        }
     ];
 
     const handleWhatsAppClick = (whatsapp: string, city: string) => {
@@ -230,7 +212,7 @@ const ContactPage: React.FC = () => {
                                                     }
                                                 }}
                                             >
-                                                @sosvet_{unit.city.toLowerCase().replace(/\s/g, '')}
+                                                @centrovet.sos_{unit.city.toLowerCase().replace(/\s/g, '')}
                                             </Link>
                                         </Box>
                                     </Stack>

@@ -18,7 +18,7 @@ const MainLayout: React.FC = () => {
                     width: { xs: '80%', sm: '60%', md: '50%', lg: '40%' },
                     height: 'auto',
                     aspectRatio: '1',
-                    backgroundImage: 'url(/images/logo-background.jpg)',
+                    backgroundImage: 'url(/sosvet-landing/images/logo-background.jpg)',
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: 'center',

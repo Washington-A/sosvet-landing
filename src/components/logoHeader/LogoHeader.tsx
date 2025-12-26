@@ -33,7 +33,7 @@ const LogoHeader: React.FC<LogoHeaderProps> = ({
         >
             <Box
                 component="img"
-                src="/images/logo-animals.png"
+                src="/sosvet-landing/images/logo-animals.png"
                 alt="Logo SOS Centro Veterinário"
                 sx={{
                     width: sizeMap[size],
