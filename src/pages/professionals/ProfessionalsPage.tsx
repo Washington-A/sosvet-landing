@@ -6,27 +6,28 @@ import LogoHeader from "../../components/logoHeader/LogoHeader.tsx";
 const ProfessionalsPage: React.FC = () => {
     const professionals = [
         {
-            image: '/images/dr-neto.jpeg',
+            image: '/sosvet-landing/images/dr-neto.jpeg',
             name: 'Dr. Lázaro Antunes Cintra Neto',
-            specialty: 'Dermatólogo Veterinári',
-            description: 'Médica-veterinária especialista em Oftalmologia Veterinária, atua no diagnóstico e tratamento das doenças oculares em cães e gatos, oferecendo atendimento cuidadoso, preciso e focado na qualidade de vida dos pacientes.'
+            specialty: 'Dermatólogo Veterinário',
+            description: 'Médico-veterinário, dermatólogo e sócio-fundador do Centro Veterinário SOS. Atua no diagnóstico e tratamento das doenças de pele em cães e gatos, aliando conhecimento técnico, inovação e um atendimento humanizado, sempre focado na saúde e no bem-estar dos pacientes.'
         },
         {
-            image: '/images/dr-carlos.png',
+            image: '/sosvet-landing/images/dr-carlos.png',
             name: 'Dr. Carlos Eduardo',
             specialty: 'Médico Veterinário',
-            description: 'Médica-veterinária especialista em Oftalmologia Veterinária, atua no diagnóstico e tratamento das doenças oculares em cães e gatos, oferecendo atendimento cuidadoso, preciso e focado na qualidade de vida dos pacientes.'
+            description: 'Com mais de 8 anos de experiência na medicina veterinária, atua como clínico geral e cirurgião de tecidos moles, oferecendo atendimento dedicado e focado na saúde e no bem-estar dos pacientes.\n' +
+                'Formado em Medicina Veterinária pela Faculdade UNIBRAS, possui sólida atuação na área cirúrgica, já tendo auxiliado dezenas de pacientes a conquistarem uma vida mais saudável.'
         },
         {
-            image: '/images/dr-django.jpeg',
+            image: '/sosvet-landing/images/dr-django.jpeg',
             name: 'Dr. Django Fabiano Bessa Gomes Gadelha',
             specialty: 'Médico Veterinário e Especialista',
-            description: 'Médico-veterinário formado pela Universidade Federal de Goiás (UFG – Jataí), com mais de 10 anos de experiência clínica e 5 anos de atuação em especialidades.' +
+            description: 'Médico-veterinário formado pela Universidade Federal de Goiás (UFG – Jataí), com mais de 10 anos de experiência clínica e 5 anos de atuação em especialidades. ' +
                 'É especialista em Ortopedia, Neurologia e Neurocirurgia de pequenos animais, com formação pela Anclivepa-SP e pela Unesp – Jaboticabal. Possui ainda capacitação em cirurgias urológicas avançadas e cirurgia abdominal avançada, atuando com excelência em casos de alta complexidade.' +
                 'CRMV 7196'
         },
         {
-            image: '/images/dra-tatiana.jpeg',
+            image: '/sosvet-landing/images/dra-tatiana.jpeg',
             name: 'Dra. Tatiana Guimarães Peres',
             specialty: 'Oftalmologista Veterinária',
             description: 'Médica-veterinária especialista em Oftalmologia Veterinária, atua no diagnóstico e tratamento das doenças oculares em cães e gatos, oferecendo atendimento cuidadoso, preciso e focado na qualidade de vida dos pacientes.'

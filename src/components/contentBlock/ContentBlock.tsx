@@ -41,7 +41,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
                             md: imagePosition === 'left' ? 'row' : 'row-reverse'
                         },
                         alignItems: 'center',
-                        gap: { xs: 4, md: 5, lg: 6 }
+                        gap: { xs: 3, md: 4 }
                     }}
                 >
                     {/* Imagem */}
@@ -57,7 +57,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
                             src={image}
                             alt={imageAlt}
                             sx={{
-                                width: '100%',
+                                width: '90%',
                                 height: 'auto',
                                 borderRadius: { xs: 2, md: 3 },
                                 boxShadow: 3,
@@ -114,6 +114,7 @@ const ContentBlock: React.FC<ContentBlockProps> = ({
                                 color: 'text.secondary',
                                 fontSize: { xs: '1rem', md: '1.125rem' },
                                 lineHeight: 1.8,
+                                textAlign:'justify',
                                 mb: type === 'list' ? 2 : 0
                             }}
                         >

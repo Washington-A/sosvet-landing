@@ -33,7 +33,7 @@ const ServicesSection: React.FC = () => {
         {
             icon: <ScienceIcon fontSize="inherit" />,
             title: 'Exames Laboratoriais',
-            description: 'Hemogramas completos para cães e gatos com tecnologia IDEXX, além de mais de 30 exames bioquímicos e 15 testes rápidos, oferecendo diagnósticos ágeis, seguros e confiáveis.'
+            description: 'Hemograma completo para cães e gatos com tecnologia IDEXX, além de mais de 30 exames bioquímicos e 15 testes rápidos, oferecendo diagnósticos ágeis, seguros e confiáveis.'
         },
         {
             icon: <MedicalInformationIcon fontSize="inherit" />,

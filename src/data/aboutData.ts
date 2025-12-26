@@ -16,7 +16,7 @@ export const aboutBlocks: AboutBlock[] = [
         title: 'A Fundação do Centro Veterinário S.O.S',
         subtitle: 'Uma História Que Nasceu de um Sonho',
         content: 'O Dr. Lázaro Antunes Cintra Neto, conhecido como Dr.Neto, sócio-fundador e médico-veterinário, iniciou esta jornada em 2010 movido pelo sonho de oferecer qualidade, inovação e cuidado humanizado no atendimento de cães e gatos em Santa Helena de Goiás. Com dedicação, amor pela medicina veterinária e compromisso com o bem-estar animal, o projeto cresceu — e assim nasceu a SOS Animal.',
-        image: 'https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=800&h=600&fit=crop',
+        image: '/sosvet-landing/images/dr-neto-sobre.jpeg',
         imageAlt: 'Veterinário fundador com cachorro',
         imagePosition: 'left',
         type: 'text'
@@ -26,7 +26,7 @@ export const aboutBlocks: AboutBlock[] = [
         title: 'O Crescimento e a Expansão',
         subtitle: 'De SOS Animal ao Centro Veterinário S.O.S',
         content: 'Ao longo dos anos, a busca por excelência fez a empresa evoluir. A SOS Animal tornou-se o Centro Veterinário S.O.S no ano de 2024, com nova sede e estrutura ampliada, atendendo também as regiões de Maurilândia e Turvelândia. São mais de 30.000 atendimentos realizados, sempre guiados pelo cuidado, pela ética e pelo respeito à vida.',
-        image: 'https://images.unsplash.com/photo-1629901925121-8a141c2a42f4?w=800&h=600&fit=crop',
+        image: '/sosvet-landing/images/centrovet-sh.jpg',
         imageAlt: 'Estrutura moderna do centro veterinário',
         imagePosition: 'right',
         type: 'text'
@@ -36,7 +36,7 @@ export const aboutBlocks: AboutBlock[] = [
         title: 'Nossa Equipe e Especialidades',
         subtitle: 'Profissionais Dedicados à Saúde dos Pets',
         content: 'Além do Dr. Neto, o time conta com também com diferentes profissionais e especialidades, formando uma equipe clínica completa e preparada para oferecer o melhor atendimento para o seu pet.',
-        image: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=800&h=600&fit=crop',
+        image: '/sosvet-landing/images/equipe-sos.jpeg  ',
         imageAlt: 'Equipe de veterinários',
         imagePosition: 'left',
         type: 'text'
