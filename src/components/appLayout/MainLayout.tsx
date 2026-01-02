@@ -1,7 +1,8 @@
 import React from 'react';
-import { Outlet } from 'react-router-dom';
-import { Box } from '@mui/material';
+import {Outlet} from 'react-router-dom';
+import {Box} from '@mui/material';
 import Header from "../Header/Header.tsx";
+import Footer from "../footer/Footer.tsx";
 
 const MainLayout: React.FC = () => {
     return (
@@ -15,7 +16,7 @@ const MainLayout: React.FC = () => {
                     top: '50%',
                     left: '50%',
                     transform: 'translate(-50%, -50%)',
-                    width: { xs: '80%', sm: '60%', md: '50%', lg: '40%' },
+                    width: {xs: '80%', sm: '60%', md: '50%', lg: '40%'},
                     height: 'auto',
                     aspectRatio: '1',
                     backgroundImage: 'url(/sosvet-landing/images/logo-background.jpg)',
@@ -28,7 +29,7 @@ const MainLayout: React.FC = () => {
                 }
             }}
         >
-            <Header />
+            <Header/>
             <Box
                 component="main"
                 sx={{
@@ -36,8 +37,9 @@ const MainLayout: React.FC = () => {
                     zIndex: 1
                 }}
             >
-                <Outlet />
+                <Outlet/>
             </Box>
+            <Footer/>
         </Box>
     );
 };
